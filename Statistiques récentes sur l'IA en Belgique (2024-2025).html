@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques récentes sur l'IA en Belgique (2024-2025)</title>
+    <style>
+        /* Les variables CSS et les styles généraux sont repris du fichier laude.html pour la cohérence visuelle */
+        :root {
+            --primary: #3498db; /* Bleu */
+            --secondary: #2ecc71; /* Vert */
+            --accent: #e74c3c; /* Rouge */
+            --dark: #2c3e50; /* Gris foncé */
+            --light: #ecf0f1; /* Gris clair */
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        p, li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        ul, ol {
+            padding-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .statistic {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background-color: var(--primary);
+            color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            flex: 1 1 300px; /* Permet aux cartes de s'adapter et de s'empiler sur petits écrans */
+            margin-right: 1rem; /* Espacement entre les cartes */
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Ajustement pour la dernière carte dans une ligne pour éviter l'excès de marge */
+        .statistic .stat-card:last-child {
+            margin-right: 0;
+        }
+
+        /* Varier les couleurs des cartes statistiques */
+        .stat-card:nth-child(2n) {
+            background-color: var(--secondary);
+        }
+
+        .stat-card:nth-child(3n) {
+            background-color: var(--accent);
+        }
+         /* Réinitialiser la couleur pour les groupes de 4 ou plus */
+        .stat-card:nth-child(4n) {
+             background-color: var(--primary);
+        }
+
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-description {
+            font-size: 1rem;
+        }
+
+         .fact-box { /* Réutilisé pour les points clés ou faits saillants */
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Styles spécifiques pour le tableau */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Media query pour la responsivité */
+        @media (max-width: 768px) {
+            .statistic {
+                flex-direction: column; /* Empile les cartes sur petits écrans */
+            }
+
+            .stat-card {
+                margin-right: 0; /* Supprime la marge droite quand les cartes sont empilées */
+                width: 100%; /* S'assure que la carte prend toute la largeur */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Statistiques récentes sur l'IA en Belgique (2024-2025)</h1>
+        <p>Un aperçu de l'adoption et de l'impact de l'Intelligence Artificielle</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Adoption de l'IA par les entreprises</h2>
+            <ul>
+                <li>En 2024, un quart (25%) des entreprises belges de plus de 10 employés utilisent au moins une application d'intelligence artificielle, soit une hausse de 80% par rapport à l'année précédente.</li>
+                <li>Ce taux place la Belgique au troisième rang européen pour l'utilisation de l'IA en entreprise, derrière le Danemark et la Suède. La moyenne de l'UE est de 13,5%.</li>
+                <li>En 2023, 12,5% des PME belges utilisaient déjà une technologie basée sur l'IA, contre 47,9% pour les grandes entreprises.</li>
+                <li>Plus de 430 entreprises font de l'IA leur activité principale ou l'utilisent intensivement, avec une répartition régionale: 255 en Flandre, 88 à Bruxelles et 94 en Wallonie.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Secteurs et applications</h2>
+             <p>L'adoption de l'IA est particulièrement avancée dans les services (27% des entreprises), mais aussi en forte croissance dans l'industrie manufacturière (+52%) et la construction (+110% en un an).</p>
+             <p>Les applications les plus courantes sont :</p>
+            <ul>
+                <li>L'analyse de texte ("text mining"): plus de 15% des entreprises utilisatrices.</li>
+                <li>Génération de langage naturel : 12,7%.</li>
+                <li>Automatisation robotisée des processus (RPA) basée sur l'IA: 10,3%.</li>
+            </ul>
+        </section>
+
+         <section class="section">
+            <h2>Impact sur l'emploi</h2>
+            <div class="fact-box">
+                 <p>Un quart des entreprises belges anticipent une réduction de leurs effectifs à cause de l'essor de l'IA, tandis qu'un tiers prévoient plutôt un besoin accru de compétences différentes chez leurs collaborateurs.</p>
+            </div>
+        </section>
+
+
+         <section class="section">
+            <h2>Comparaison européenne</h2>
+            <p>La Belgique surpasse la moyenne européenne en matière d'adoption de l'IA: 14% des entreprises belges utilisaient l'IA en 2023, contre 8% en moyenne dans l'UE.</p>
+            <p>Les pays les moins avancés en Europe sont la Roumanie (3,1%), la Pologne (5,9%) et la Bulgarie (6,5%).</p>
+        </section>
+
+        <section class="section">
+            <h2>Résumé chiffré</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Indicateur</th>
+                        <th>Belgique (2024-2025)</th>
+                        <th>Moyenne UE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Entreprises utilisant l'IA</td>
+                        <td>25%</td>
+                        <td>13,5%</td>
+                    </tr>
+                    <tr>
+                        <td>PME utilisant l'IA (2023)</td>
+                        <td>12,5%</td>
+                        <td></td> </tr>
+                     <tr>
+                        <td>Grandes entreprises utilisant l'IA (2023)</td>
+                        <td>47,9%</td>
+                         <td></td> </tr>
+                     <tr>
+                        <td>Entreprises où l'IA est activité principale</td>
+                        <td>430+</td>
+                         <td></td> </tr>
+                     <tr>
+                        <td>Croissance annuelle de l'adoption de l'IA</td>
+                        <td>+80%</td>
+                         <td></td> </tr>
+                </tbody>
+            </table>
+        </section>
+
+         <section class="section">
+            <h2>Initiatives et investissements</h2>
+            <p>L'initiative "AI 4 Belgium" fédère les acteurs du secteur, mais les investissements publics restent modestes: 20 millions d'euros annoncés, loin derrière les grandes puissances mondiales.</p>
+             <p>La Belgique mise sur son économie de la connaissance pour rester compétitive et renforcer l'intégration de l'IA dans ses entreprises.</p>
+        </section>
+
+
+        <section class="section">
+            <h2>Conclusion</h2>
+            <p>La Belgique se distingue par une adoption rapide et massive de l'IA en entreprise, une position de leader européen, mais reste confrontée à des défis d'investissement et de formation pour soutenir cette dynamique.</p>
+        </section>
+
+        <section class="section">
+            <h2>Sources</h2>
+            <ol>
+                <li><a href="https://www.acerta.be/fr/dans-la-presse/lutilisation-de-lintelligence-artificielle-au-travail-les-entreprises-belges-dans-le-top-3-europeen" target="_blank">https://www.acerta.be/fr/dans-la-presse/lutilisation-de-lintelligence-artificielle-au-travail-les-entreprises-belges-dans-le-top-3-europeen</a></li>
+                <li><a href="https://datanews.levif.be/analyse/arriere-plan/aiatwork/lia-au-travail-les-entreprises-belges-dans-le-top-3-europeen/" target="_blank">https://datanews.levif.be/analyse/arriere-plan/aiatwork/lia-au-travail-les-entreprises-belges-dans-le-top-3-europeen/</a></li>
+                <li><a href="https://news.economie.fgov.be/244743-ia-en-entreprise-la-belgique-dans-le-peloton-de-tete" target="_blank">https://news.economie.fgov.be/244743-ia-en-entreprise-la-belgique-dans-le-peloton-de-tete</a></li>
+                <li><a href="https://datanews.levif.be/actualite/belgique/la-belgique-dans-le-peloton-de-tete-europeen-pour-lia-en-entreprise/" target="_blank">https://datanews.levif.be/actualite/belgique/la-belgique-dans-le-peloton-de-tete-europeen-pour-lia-en-entreprise/</a></li>
+                <li><a href="https://www.yiaho.com/lia-en-belgique-en-2025-acteurs-cles-et-initiatives/" target="_blank">https://www.yiaho.com/lia-en-belgique-en-2025-acteurs-cles-et-initiatives/</a></li>
+                <li><a href="https://www.agoria.be/fr/services/expertise/digitalisation/intelligence-artificielle/les-entreprises-belges-a-la-pointe-en-matiere-dutilisation-de-lia" target="_blank">https://www.agoria.be/fr/services/expertise/digitalisation/intelligence-artificielle/les-entreprises-belges-a-la-pointe-en-matiere-dutilisation-de-lia</a></li>
+            </ol>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2024-2025 - Statistiques sur l'IA en Belgique</p>
+    </footer>
+</body>
+</html>
