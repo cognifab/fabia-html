@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règlement IA de l'UE (AI Act) - Résumé</title>
+    <style>
+        /* Styles repris pour une cohérence visuelle */
+        :root {
+            --primary: #3498db; /* Bleu */
+            --secondary: #2ecc71; /* Vert */
+            --accent: #e74c3c; /* Rouge */
+            --dark: #2c3e50; /* Gris foncé */
+            --light: #ecf0f1; /* Gris clair */
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        p, li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        ul, ol {
+            padding-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+         .fact-box { /* Utilisé pour mettre en évidence des points clés ou dates */
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Media query pour la responsivité */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.7rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            p, li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Règlement IA de l'UE (AI Act)</h1>
+        <p>Résumé : Règles pour une IA digne de confiance</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Objectif et Portée</h2>
+            <p>Le Règlement (UE) 2024/1689, dit "règlement sur l'intelligence artificielle" (ou "AI Act"), vise à promouvoir le développement et l'adoption de systèmes d'IA sûrs et dignes de confiance au sein du marché unique de l'UE. Il entend garantir la protection de la santé, de la sécurité et des droits fondamentaux des citoyens.</p>
+             <p>Il établit des règles harmonisées basées sur une approche par les risques pour la mise sur le marché, la mise en service et l'utilisation des systèmes d'IA.</p>
+        </section>
+
+        <section class="section">
+            <h2>Approche Basée sur les Risques</h2>
+            <h3>Risque Inacceptable (Interdictions)</h3>
+            <ul>
+                <li>Pratiques comme la manipulation comportementale subliminale.</li>
+                <li>Exploitation des vulnérabilités.</li>
+                <li>Notation sociale généralisée.</li>
+                <li>Certains types de reconnaissance faciale et d'inférence émotionnelle.</li>
+            </ul>
+
+            <h3>Risque Élevé</h3>
+            <p>Systèmes d'IA dans des domaines critiques (ex: composants de sécurité, biométrie pour identification à distance, infrastructures critiques, éducation, emploi, services essentiels, répression, migration, justice). Ils sont soumis à :</p>
+            <ul>
+                <li>Exigences strictes (qualité des données, documentation, transparence, surveillance humaine, robustesse, cybersécurité).</li>
+                <li>Évaluation de conformité.</li>
+            </ul>
+
+            <h3>Risque Limité (Obligations de Transparence)</h3>
+            <p>Systèmes interagissant avec des humains (chatbots), générant du contenu (deepfakes) doivent informer de leur nature artificielle.</p>
+
+            <h3>Risque Minimal</h3>
+            <p>Pas de nouvelles règles spécifiques, mais encouragement à des codes de conduite volontaires.</p>
+        </section>
+
+         <section class="section">
+            <h2>Modèles d'IA à Usage Général (GPAI)</h2>
+            <p>Des obligations de transparence s'appliquent (documentation technique, informations pour les développeurs en aval, résumé du contenu utilisé pour l'entraînement). Les modèles GPAI présentant des risques systémiques sont soumis à des obligations supplémentaires (évaluation des modèles, gestion des risques systémiques, tests contradictoires, cybersécurité, reporting d'incidents graves).</p>
+        </section>
+
+        <section class="section">
+            <h2>Gouvernance et Application</h2>
+            <ul>
+                <li><strong>Bureau de l'IA :</strong> Au sein de la Commission européenne, pour coordonner l'application, superviser les GPAI et développer des normes.</li>
+                <li><strong>Comité européen de l'IA (Comité IA) :</strong> Composé de représentants des États membres, pour assurer une application cohérente.</li>
+                <li><strong>Autorités nationales compétentes :</strong> Désignées par chaque État membre pour la surveillance et l'application du règlement.</li>
+            </ul>
+            <div class="fact-box">
+                <p>Des sanctions sous forme d'amendes sont prévues en cas d'infraction, avec des montants proportionnels pour les PME et startups.</p>
+            </div>
+        </section>
+
+         <section class="section">
+            <h2>Innovation et Entrée en Vigueur</h2>
+            <p>Le règlement encourage l'innovation via des bacs à sable réglementaires de l'IA et des possibilités de tests en conditions réelles.</p>
+            <p>Le règlement s'appliquera majoritairement à partir du <strong>2 août 2026</strong>. Certaines dispositions entrent en vigueur plus tôt :</p>
+            <ul>
+                <li><strong>2 février 2025 :</strong> Interdictions et certaines définitions.</li>
+                <li><strong>2 août 2025 :</strong> Règles sur la gouvernance, les sanctions, et les obligations pour les fournisseurs de modèles d'IA à usage général.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2024 - Résumé AI Act UE</p>
+    </footer>
+</body>
+</html>
